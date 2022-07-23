@@ -1,38 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:wght@400;700&display=swap');
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--Very-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Overpass', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .App {
+  background-color: var(--Dark-Blue);
+  color: var(--White);
+  width: 420px;
+  min-height: 420px;
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.Center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.op50 {
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Star {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(124, 135, 152, 0.5);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 40px;
+  /* opacity: 50%;   */
 }
 
-.App-link {
-  color: #61dafb;
+
+.NumContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Num {
+  font-size: 15px;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--Medium-Grey);
+  opacity: 60%;
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Num:hover {
+  background-color: var(--Orange);
+  opacity: 100%;
+}
+
+.Num.active {
+  background-color: var(--Light-Grey);
+  opacity: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.SubmitButton {
+  background-color: var(--Orange);
+  color: var(--White);
+  width: 100%;
+  height: 40px;
+  font-size: large;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 485px) {
+  .App {
+    width: calc(100vw - 16px);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+.Result > p {
+  background-color: rgba(124, 135, 152, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--Orange);
+  opacity: 90%;
+  margin-top: 40px;
 }
