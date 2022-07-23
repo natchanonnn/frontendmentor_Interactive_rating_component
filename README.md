@@ -1,5 +1,5 @@
 # Develop With React App
-Built Codes in Branch [gh-pages])(https://github.com/natchanonnn/frontendmentor_interactive_rating_component/tree/gh-pages)
+Built Codes in Branch [gh-pages](https://github.com/natchanonnn/frontendmentor_interactive_rating_component/tree/gh-pages)
 
 # Getting Started with Create React App
 
